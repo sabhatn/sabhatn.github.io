@@ -16,8 +16,6 @@ Live URL (once deployed): **https://sabhatn.github.io**
 | `Profile.png` | Earlier source slide (kept for reference; not used by the page). |
 | `README.md` | This file. |
 
-> `Sachin_Bhatnagar.docx`, `Designer.png` and `Profile.png` are source/working files —
-> they are **not** used by the site and can be deleted or `.gitignore`d before deploy.
 
 ## Edit the content
 
