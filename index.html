@@ -261,6 +261,8 @@
   .case .block{margin:.7rem 0}
   .case .block .l{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
   .case .block p{margin:.2rem 0 0;font-size:.95rem;color:var(--text)}
+  /* reserve height on the Challenge text so the Approach row aligns across each row of cards */
+  .case .block:first-of-type p{min-height:6.4em}
   .case .result{background:linear-gradient(180deg,#fff,var(--paper));border-top:1px solid var(--line);padding:16px 26px;margin-top:0;display:flex;flex-direction:column}
   .case .result .l{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-d)}
   .case .result p{margin:.25rem 0 .8rem;font-weight:600;color:var(--text)}
