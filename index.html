@@ -1,0 +1,975 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sachin Bhatnagar — Independent Decision Intelligence Advisor</title>
+<meta name="description" content="Independent, vendor-neutral Decision Intelligence advisor — 19+ years across 30+ enterprises. I turn complex data into trusted, governed, AI-ready decisions: BI, reporting, data architecture and strategy across Azure, Fabric, Power BI and Tableau — an early adopter of agentic, code-first BI development." />
+<meta name="author" content="Sachin Bhatnagar" />
+<meta name="theme-color" content="#0f1620" />
+<link rel="canonical" href="https://sabhatn.github.io/" />
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Sachin Bhatnagar" />
+<meta property="og:title" content="Sachin Bhatnagar — Independent Decision Intelligence Advisor" />
+<meta property="og:description" content="Turn complex data into trusted, AI-ready decisions. 19+ years, 30+ enterprises. Governed BI, reporting, data architecture & strategy — and an early adopter of agentic, code-first BI development." />
+<meta property="og:url" content="https://sabhatn.github.io/" />
+<meta property="og:image" content="https://sabhatn.github.io/glance.jpg" />
+<meta property="og:image:alt" content="Sachin Bhatnagar — Decision Intelligence at a glance" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Sachin Bhatnagar — Independent Decision Intelligence Advisor" />
+<meta name="twitter:description" content="Turn complex data into trusted, AI-ready decisions. 19+ years, 30+ enterprises — governed BI, reporting, data architecture & strategy, with agentic BI development." />
+<meta name="twitter:image" content="https://sabhatn.github.io/glance.jpg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+
+<style>
+  /* ============================================================
+     Sachin Bhatnagar — personal consulting site
+     Single file. All CSS + JS inline. No build step.
+     Brand identity: deep ink + signature amber. Fraunces display.
+     ============================================================ */
+  :root{
+    --ink:#0f1620;          /* deepest background */
+    --ink-2:#141d2a;        /* raised dark surface */
+    --ink-3:#1c2735;        /* card on dark */
+    --line-dark:#26303e;
+    --paper:#f7f5f0;        /* warm off-white sections */
+    --paper-2:#efece4;
+    --card:#ffffff;
+    --text:#1a2230;         /* body text on light */
+    --muted:#5a6675;        /* secondary text on light */
+    --muted-d:#9aa7b7;      /* secondary text on dark */
+    --heading-d:#f3f1ea;    /* headings on dark */
+    --accent:#e39a2f;       /* signature amber */
+    --accent-d:#c9821c;     /* darker amber for text-on-light contrast */
+    --accent-soft:#f7e2bd;
+    --teal:#2fa98f;         /* secondary signal accent, used sparingly */
+    --line:#e4e0d6;
+    --radius:16px;
+    --maxw:1120px;
+    --shadow:0 1px 2px rgba(16,24,38,.06), 0 12px 30px -12px rgba(16,24,38,.18);
+    --shadow-lg:0 30px 60px -24px rgba(16,24,38,.35);
+    font-synthesis-weight:none;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:17px;line-height:1.6;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  }
+  h1,h2,h3,h4{font-family:"Fraunces",Georgia,"Times New Roman",serif;font-weight:600;line-height:1.12;letter-spacing:-.01em;margin:0;text-wrap:balance}
+  p{margin:0 0 1rem;text-wrap:pretty}
+  a{color:inherit}
+  img{max-width:100%;height:auto;display:block}
+  ::selection{background:var(--accent);color:#fff}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  section{padding:88px 0}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent-d);margin:0 0 1rem;
+  }
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);border-radius:2px}
+  .section-head{margin:0 0 44px}
+  .section-head h2{font-size:clamp(1.8rem,4vw,2.6rem)}
+  .section-head p{color:var(--muted);font-size:1.06rem;margin-top:.85rem;text-wrap:pretty}
+  .lead{font-size:1.12rem;color:var(--muted);text-wrap:balance}
+
+  /* buttons */
+  .btn{
+    display:inline-flex;align-items:center;gap:.5rem;cursor:pointer;
+    font-weight:600;font-size:.98rem;text-decoration:none;
+    padding:.85rem 1.4rem;border-radius:999px;border:1.5px solid transparent;
+    transition:transform .15s ease, background .2s ease, box-shadow .2s ease, border-color .2s ease;
+    white-space:nowrap;
+  }
+  .btn:active{transform:translateY(1px)}
+  .btn-primary{background:var(--accent);color:#20160a;box-shadow:0 8px 20px -8px rgba(227,154,47,.7)}
+  .btn-primary:hover{background:#f0a838;box-shadow:0 12px 26px -8px rgba(227,154,47,.75)}
+  .btn-ghost{border-color:var(--line-dark);color:var(--heading-d)}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+  .btn-ghost.on-light{border-color:#cdc7b8;color:var(--text)}
+  .btn-ghost.on-light:hover{border-color:var(--accent-d);color:var(--accent-d)}
+  .btn .arrow{transition:transform .15s ease}
+  .btn:hover .arrow{transform:translateX(3px)}
+
+  /* nav */
+  header.nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(15,22,32,.82);backdrop-filter:saturate(140%) blur(12px);
+    border-bottom:1px solid rgba(255,255,255,.06);
+  }
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--heading-d);font-weight:700;letter-spacing:-.01em}
+  .brand .mark{
+    width:30px;height:30px;border-radius:8px;display:grid;place-items:center;
+    background:linear-gradient(140deg,var(--accent),#b9720f);color:#20160a;
+    font-family:"Fraunces",serif;font-weight:700;font-size:1.02rem;
+  }
+  .brand small{display:block;font-weight:500;font-size:.68rem;letter-spacing:.02em;color:var(--muted-d)}
+  .nav-links{display:flex;align-items:center;gap:1.55rem;list-style:none;margin:0;padding:0}
+  .nav-links a{color:var(--muted-d);text-decoration:none;font-size:.92rem;font-weight:500;transition:color .15s}
+  .nav-links a:hover{color:var(--heading-d)}
+  .nav-cta{display:flex;align-items:center;gap:.75rem}
+  .nav-toggle{display:none;background:none;border:1px solid var(--line-dark);border-radius:8px;color:var(--heading-d);width:40px;height:38px;cursor:pointer}
+  @media (max-width:900px){
+    .nav-links{
+      position:absolute;top:64px;left:0;right:0;flex-direction:column;align-items:flex-start;gap:0;
+      background:var(--ink);border-bottom:1px solid var(--line-dark);padding:8px 24px 18px;
+      display:none;
+    }
+    .nav-links.open{display:flex}
+    .nav-links a{width:100%;padding:.7rem 0;border-bottom:1px solid rgba(255,255,255,.05)}
+    .nav-toggle{display:inline-grid;place-items:center}
+    .nav-cta .btn-ghost{display:none}
+  }
+
+  /* hero */
+  .hero{
+    background:
+      radial-gradient(900px 420px at 82% -8%, rgba(227,154,47,.16), transparent 60%),
+      radial-gradient(700px 500px at 8% 110%, rgba(47,169,143,.10), transparent 55%),
+      var(--ink);
+    color:var(--heading-d);position:relative;overflow:hidden;
+    padding:76px 0 84px;
+  }
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+  .hero h1{font-size:clamp(2.3rem,5.4vw,4rem);font-weight:600;letter-spacing:-.02em}
+  .hero h1 .hl{color:var(--accent);font-style:normal;font-weight:500}
+  .hero .lead{color:var(--muted-d);max-width:38ch;margin:1.35rem 0 0}
+  .tagrow{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.9rem 0 2.1rem}
+  .tag{
+    font-size:.82rem;font-weight:600;color:#e9d9bd;
+    border:1px solid rgba(227,154,47,.32);background:rgba(227,154,47,.08);
+    padding:.4rem .8rem;border-radius:999px;
+  }
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.85rem}
+  .hero-meta{display:grid;grid-template-columns:repeat(5,1fr);margin-top:3rem;padding-top:1.9rem;border-top:1px solid rgba(255,255,255,.08)}
+  .hero-meta div{text-align:center;padding:0 .8rem;border-left:1px solid var(--line-dark)}
+  .hero-meta div:first-child{border-left:none}
+  .hero-meta b{display:block;font-family:"Fraunces",serif;font-size:1.7rem;color:var(--heading-d);line-height:1;margin-bottom:.4rem}
+  .hero-meta div>span{font-size:.8rem;color:var(--muted-d)}
+  @media (max-width:900px){.hero-meta{grid-template-columns:repeat(3,1fr);row-gap:1.5rem}.hero-meta div{border-left:none;padding:0 .5rem}}
+  @media (max-width:520px){.hero-meta{grid-template-columns:repeat(2,1fr)}}
+  .portrait-card{position:relative;max-width:380px;margin-left:auto}
+  .portrait-card .frame{
+    border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.10);
+    background:linear-gradient(180deg,#20303f,#16202c);box-shadow:var(--shadow-lg);
+    transform:rotate(1.4deg);
+  }
+  .portrait-card .frame img{width:100%;height:auto;display:block;aspect-ratio:560/585;object-fit:cover;object-position:50% 30%;filter:saturate(1.03)}
+  .portrait-badge{
+    position:absolute;left:50%;bottom:-16px;transform:translateX(-50%);
+    display:inline-flex;align-items:center;gap:0;white-space:nowrap;
+    background:#fff;color:var(--text);border-radius:999px;padding:.5rem 1.05rem;
+    box-shadow:var(--shadow-lg);border:1px solid rgba(0,0,0,.05);
+    font-size:.82rem;font-weight:600;letter-spacing:.01em;
+  }
+  .signal-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--teal);margin-right:.4rem;box-shadow:0 0 0 4px rgba(47,169,143,.2)}
+  @media (max-width:860px){
+    .hero-grid{grid-template-columns:1fr;gap:40px}
+    .portrait-card{max-width:360px;margin:0 auto}
+    .portrait-card .frame{transform:none}
+  }
+
+  /* trusted / reach strip */
+  .strip{background:var(--ink-2);color:var(--muted-d);padding:20px 0;border-top:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark)}
+  .strip .wrap{display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap;justify-content:center;font-size:.86rem}
+  .strip b{color:#d7cbb4;font-weight:600}
+  .strip .sep{opacity:.4}
+
+  /* generic card grids */
+  .grid{display:grid;gap:22px}
+  .cols-2{grid-template-columns:repeat(2,1fr)}
+  .cols-3{grid-template-columns:repeat(3,1fr)}
+  .cols-4{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:900px){.cols-3,.cols-4{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:620px){.cols-2,.cols-3,.cols-4{grid-template-columns:1fr}}
+
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);transition:transform .18s ease, box-shadow .18s ease;display:flex;flex-direction:column}
+  .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+  .card h3{font-size:1.22rem;margin-bottom:.5rem}
+  .card p{color:var(--muted);font-size:.97rem;margin-bottom:1rem}
+  .card .icon{
+    width:44px;height:44px;border-radius:12px;display:grid;place-items:center;margin-bottom:16px;
+    background:linear-gradient(150deg,var(--accent-soft),#fff);border:1px solid var(--line);
+  }
+  .card .icon svg{width:22px;height:22px;stroke:var(--accent-d)}
+  .chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:auto}
+  .chip{font-size:.72rem;font-weight:600;color:var(--muted);background:var(--paper-2);border:1px solid var(--line);padding:.26rem .58rem;border-radius:999px}
+
+  /* outcomes */
+  .outcomes{background:var(--paper)}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
+  .stat .big{font-family:"Fraunces",serif;font-size:2.5rem;font-weight:600;color:var(--text);line-height:1;letter-spacing:-.02em}
+  .stat .big em{font-style:normal;color:var(--accent-d)}
+  .stat h3{font-size:1.02rem;margin:.7rem 0 .35rem}
+  .stat p{color:var(--muted);font-size:.9rem;margin:0}
+
+  /* services on dark */
+  .services{background:var(--ink);color:var(--heading-d)}
+  .services .section-head p{color:var(--muted-d)}
+  .services .card{background:var(--ink-3);border-color:var(--line-dark);color:var(--heading-d)}
+  .services .card:hover{box-shadow:0 30px 60px -24px rgba(0,0,0,.6)}
+  .services .card h3{color:var(--heading-d)}
+  .services .card p{color:var(--muted-d)}
+  .services .card .icon{background:rgba(227,154,47,.12);border-color:rgba(227,154,47,.28)}
+  .services .card .icon svg{stroke:var(--accent)}
+  .services .chip{color:#cfd8e2;background:rgba(255,255,255,.04);border-color:var(--line-dark)}
+  /* service cards each have exactly 3 tags — stack them one per line and bottom-pin so the 3-row block aligns across the row */
+  .services .chips{margin-top:auto;flex-direction:column;align-items:flex-start}
+  /* Reserve a consistent 2-line title slot so service card bodies align across the row. */
+  .services .card h3{font-size:1.12rem;line-height:1.2;min-height:2.4em}
+
+  /* engagements */
+  .engage .card{display:flex;flex-direction:column;height:100%}
+  .engage .tagline{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-d);margin-bottom:.5rem}
+  /* Reserve a consistent 2-line title slot so the Problem/For/Deliverable rows align across cards. */
+  .engage .card h3{font-size:1.08rem;line-height:1.22;min-height:2.44em;margin-bottom:.75rem}
+  .kv{display:grid;grid-template-columns:auto 1fr;gap:.35rem .8rem;margin:.4rem 0 1rem;font-size:.92rem;line-height:1.45}
+  .kv dt{color:var(--muted);font-weight:600}
+  .kv dd{margin:0;color:var(--text)}
+  /* reserve height on the Problem & For answers so Problem/For/Deliverable rows align across all engagement cards */
+  .engage .kv dd:nth-of-type(1){min-height:5.9em}
+  .engage .kv dd:nth-of-type(2){min-height:4.4em}
+
+  /* why */
+  .why{background:var(--paper-2)}
+  .why-list{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  @media (max-width:720px){.why-list{grid-template-columns:1fr}}
+  .why-item{display:flex;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow)}
+  .why-item .num{font-family:"Fraunces",serif;font-size:1.1rem;color:var(--accent-d);border:1px solid var(--accent-soft);background:#fff;border-radius:10px;min-width:38px;height:38px;display:grid;place-items:center;font-weight:600}
+  .why-item h3{font-size:1.08rem;margin-bottom:.3rem}
+  .why-item p{color:var(--muted);font-size:.94rem;margin:0}
+  .why-item.feature{grid-column:1/-1;border-color:var(--accent-soft);background:linear-gradient(180deg,#fff,#fff7ea)}
+  .why-item.feature .num{background:var(--accent);border-color:var(--accent);color:#20160a}
+  .why-item.feature p{color:var(--text)}
+
+  /* work / case cards */
+  .case{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:0;overflow:hidden;box-shadow:var(--shadow);display:grid;grid-template-rows:subgrid;grid-row:span 2}
+  .case-top{padding:24px 26px 4px}
+  .case .sector{font-size:.76rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--teal)}
+  .case h3{font-size:1.2rem;line-height:1.2;min-height:2.4em;margin:.5rem 0 .9rem}
+  .case .block{margin:.7rem 0}
+  .case .block .l{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .case .block p{margin:.2rem 0 0;font-size:.95rem;color:var(--text)}
+  .case .result{background:linear-gradient(180deg,#fff,var(--paper));border-top:1px solid var(--line);padding:16px 26px;margin-top:0;display:flex;flex-direction:column}
+  .case .result .l{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-d)}
+  .case .result p{margin:.25rem 0 .8rem;font-weight:600;color:var(--text)}
+  .case .toolrow{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:auto}
+  .case .toolrow span{font-size:.72rem;color:var(--muted);background:var(--paper-2);border:1px solid var(--line);padding:.2rem .55rem;border-radius:6px}
+
+  /* approach */
+  .approach{background:var(--ink);color:var(--heading-d)}
+  .approach .section-head p{color:var(--muted-d)}
+  .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;counter-reset:step}
+  @media (max-width:900px){.steps{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:520px){.steps{grid-template-columns:1fr}}
+  .step{background:var(--ink-3);border:1px solid var(--line-dark);border-radius:var(--radius);padding:22px;position:relative}
+  .step .n{font-family:"Fraunces",serif;font-size:.85rem;color:var(--accent);letter-spacing:.1em;font-weight:600}
+  .step h3{color:var(--heading-d);font-size:1.12rem;margin:.5rem 0 .5rem}
+  .step p{color:var(--muted-d);font-size:.9rem;margin:0}
+
+  /* experience & reach */
+  .reach{background:var(--paper)}
+  .timeline{position:relative;margin:0;padding:0;list-style:none}
+  .timeline li{position:relative;padding:0 0 26px 30px;border-left:2px solid var(--line)}
+  .timeline li:last-child{border-left-color:transparent;padding-bottom:0}
+  .timeline li::before{content:"";position:absolute;left:-8px;top:3px;width:14px;height:14px;border-radius:50%;background:var(--accent);border:3px solid var(--paper)}
+  .timeline .role{font-weight:700;font-size:1.02rem}
+  .timeline .org{color:var(--muted);font-size:.92rem}
+  .timeline .when{font-size:.8rem;color:var(--accent-d);font-weight:600;letter-spacing:.02em}
+  .timeline p{margin:.35rem 0 0;color:var(--muted);font-size:.92rem}
+  .reach-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:start}
+  @media (max-width:860px){.reach-grid{grid-template-columns:1fr;gap:36px}}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin-bottom:22px}
+  .panel h3{font-size:1.05rem;margin-bottom:.9rem}
+  .pill-row{display:flex;flex-wrap:wrap;gap:.45rem}
+  .pill{font-size:.82rem;font-weight:500;color:var(--text);background:var(--paper-2);border:1px solid var(--line);padding:.35rem .7rem;border-radius:999px}
+  .pill.accent{border-color:var(--accent-soft);background:#fff8ec;color:var(--accent-d);font-weight:600}
+  a.pill{text-decoration:none;cursor:pointer;display:inline-flex;align-items:center;transition:border-color .15s,background .15s,transform .15s,color .15s,box-shadow .15s}
+  a.pill:hover,a.pill:focus-visible{border-color:var(--accent-d);background:#fff8ec;color:var(--accent-d);transform:translateY(-1px);box-shadow:0 6px 14px -8px rgba(227,154,47,.6)}
+  a.pill .ext{width:11px;height:11px;margin-left:.4rem;opacity:.55;transition:opacity .15s,transform .15s}
+  a.pill:hover .ext,a.pill:focus-visible .ext{opacity:1;transform:translate(1px,-1px)}
+  .panel h3 .hint{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-d);margin-left:.5rem;vertical-align:middle}
+  .panel h3 .hint svg{width:10px;height:10px;vertical-align:-1px;margin-right:.15rem}
+
+  /* at-a-glance visual */
+  .glance{background:var(--paper-2)}
+  .glance-wrap{display:grid;grid-template-columns:1fr;gap:22px;justify-items:center}
+  .glance figure{margin:0;max-width:960px;width:100%;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px;box-shadow:var(--shadow)}
+  .glance img{border-radius:8px}
+  .glance figcaption{color:var(--muted);font-size:.85rem;text-align:center;margin-top:.7rem}
+
+  /* booking */
+  .book{background:var(--ink);color:var(--heading-d)}
+  .book .section-head p{color:var(--muted-d)}
+  .book-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+  @media (max-width:860px){.book-grid{grid-template-columns:1fr;gap:28px}}
+  .book ul.ticks{list-style:none;margin:1.2rem 0 1.6rem;padding:0}
+  .book ul.ticks li{position:relative;padding-left:1.8rem;margin-bottom:.7rem;color:var(--muted-d)}
+  .book ul.ticks li::before{content:"";position:absolute;left:0;top:.5em;width:12px;height:12px;border-radius:3px;background:var(--accent)}
+  .cal-frame{background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line-dark);box-shadow:var(--shadow-lg);min-height:640px}
+  .cal-frame iframe{width:100%;height:680px;border:0;display:block}
+  .cal-fallback{padding:26px;color:var(--muted-d)}
+
+  /* footer */
+  footer.site{background:#0b1119;color:var(--muted-d);padding:56px 0 30px;border-top:1px solid var(--line-dark)}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+  @media (max-width:760px){.foot-grid{grid-template-columns:1fr;gap:26px}}
+  footer.site h4{color:var(--heading-d);font-size:1.15rem;margin-bottom:.5rem}
+  footer.site a{color:var(--muted-d);text-decoration:none}
+  footer.site a:hover{color:var(--accent)}
+  /* keep the primary button's dark-on-amber text (footer link color must not override it) */
+  footer.site a.btn-primary,footer.site a.btn-primary:hover{color:#20160a}
+  .foot-links{list-style:none;margin:0;padding:0;display:grid;gap:.5rem;font-size:.94rem}
+  .foot-label{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:#6b7787;margin-bottom:.9rem;font-weight:700}
+  .foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:40px;padding-top:22px;border-top:1px solid var(--line-dark);font-size:.84rem}
+
+  /* focus visibility for accessibility */
+  a:focus-visible,.btn:focus-visible,button:focus-visible,iframe:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+  .skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:#20160a;padding:.6rem 1rem;border-radius:0 0 8px 0;font-weight:600;z-index:100}
+  .skip:focus{left:0}
+
+  /* scroll-reveal: elements fade/rise in as they enter the viewport */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .65s cubic-bezier(.22,.61,.36,1),transform .65s cubic-bezier(.22,.61,.36,1)}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+
+<a href="#main" class="skip">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Sachin Bhatnagar — home">
+      <span class="mark" aria-hidden="true">SB</span>
+      <span>Sachin Bhatnagar<small>Decision Intelligence Advisor</small></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#outcomes">Outcomes</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#engagements">Engagements</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="#experience">View work</a>
+      <a class="btn btn-primary" href="#book">Book a call</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<a id="top"></a>
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Independent Decision Intelligence Advisor</p>
+      <h1 id="hero-title">Turn complex data into <span class="hl">trusted decisions.</span></h1>
+      <p class="lead">Independent and vendor-neutral, I help enterprises design BI, reporting, data architecture and strategy that people actually trust — governed, AI-ready, and built to move business outcomes, not just dashboards.</p>
+      <div class="tagrow" role="list" aria-label="Focus areas">
+        <span class="tag" role="listitem">AI-compliant BI</span>
+        <span class="tag" role="listitem">Agentic BI development</span>
+        <span class="tag" role="listitem">Analytical &amp; operational reporting</span>
+        <span class="tag" role="listitem">Data architecture</span>
+        <span class="tag" role="listitem">Data strategy</span>
+        <span class="tag" role="listitem">Governance &amp; Security</span>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#book">Book a discovery call
+          <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#work">View selected work</a>
+      </div>
+    </div>
+    <div class="portrait-card">
+      <div class="frame"><img src="portrait.jpg" width="560" height="585" alt="Portrait of Sachin Bhatnagar, Decision Intelligence Advisor" /></div>
+      <div class="portrait-badge"><span class="signal-dot" aria-hidden="true"></span>Independent &amp; Tool-Agnostic</div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="hero-meta">
+      <div><b><span class="yoe">19+</span></b><span>Years in BI &amp; data</span></div>
+      <div><b>30+</b><span>Enterprise clients</span></div>
+      <div><b>8</b><span>Industries</span></div>
+      <div><b>10+</b><span>Countries</span></div>
+      <div><b>3</b><span>Clouds</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- reach strip -->
+<div class="strip" aria-label="Areas of work">
+  <div class="wrap">
+    <b>Energy</b><span class="sep">/</span><b>Aviation</b><span class="sep">/</span><b>Healthcare &amp; Life Sciences</b><span class="sep">/</span><b>Banking &amp; Financial Services</b><span class="sep">/</span><b>Retail &amp; CPG</b><span class="sep">/</span><b>Insurance</b>
+  </div>
+</div>
+
+<!-- ============ OUTCOMES ============ -->
+<section class="outcomes" id="outcomes" aria-labelledby="outcomes-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Outcomes</p>
+      <h2 id="outcomes-title">The business results I help deliver</h2>
+      <p>Every engagement is measured against decisions made faster, risk removed, and platforms teams can rely on. A few examples from real client work.</p>
+    </div>
+    <div class="grid cols-4">
+      <div class="stat reveal">
+        <div class="big"><em>2min→2s</em></div>
+        <h3>Reports that keep up</h3>
+        <p>Re-modelled a supply-chain command centre from best-practice DAX up — render time cut from ~2 minutes to ~2 seconds.</p>
+      </div>
+      <div class="stat reveal">
+        <div class="big"><em>200→50</em></div>
+        <h3>Signal over sprawl</h3>
+        <p>Consolidated 200+ overlapping reports into 50 dynamic, self-service Power BI reports on a modern Azure warehouse.</p>
+      </div>
+      <div class="stat reveal">
+        <div class="big"><em>RAC</em> ✓</div>
+        <h3>Compliance unblocked</h3>
+        <p>Designed a scalable way to scan Power BI for sensitive data — the checkpoint a regulated bank needed to approve its uplift.</p>
+      </div>
+      <div class="stat reveal">
+        <div class="big"><em>One truth</em></div>
+        <h3>Governed by design</h3>
+        <p>Standardised models, measure definitions and ALM so business users stop arguing about which number is right.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services" aria-labelledby="services-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Service areas</p>
+      <h2 id="services-title">Four ways I make data decision-ready</h2>
+      <p>Independent and tool-agnostic — I bring the right pattern for your stack, whether that's Microsoft Fabric, Power BI, Tableau, or a mixed cloud estate.</p>
+    </div>
+    <div class="grid cols-4">
+      <article class="card reveal">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>AI-compliant, governed BI</h3>
+        <p>Row-level security, data classification, semantic models and governance that keep analytics trustworthy — and ready for Copilot and AI without leaking what shouldn't leave.</p>
+        <div class="chips"><span class="chip">RLS &amp; security</span><span class="chip">Data classification</span><span class="chip">AI readiness</span></div>
+      </article>
+      <article class="card reveal">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5"/><path d="M4 19h16"/><rect x="7" y="10" width="3" height="6"/><rect x="12" y="6" width="3" height="10"/><rect x="17" y="12" width="3" height="4"/></svg></div>
+        <h3>Analytical &amp; operational reporting</h3>
+        <p>From executive scorecards to operational command centres — reports designed for adoption, tuned for performance, and wired to the decisions they support.</p>
+        <div class="chips"><span class="chip">Power BI</span><span class="chip">Tableau</span><span class="chip">Semantic models</span></div>
+      </article>
+      <article class="card reveal">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><path d="M10 6.5h4M6.5 10v4M17.5 10v4M10 17.5h4"/></svg></div>
+        <h3>Data architecture &amp; platform</h3>
+        <p>Dimensional models, lakehouse and warehouse design, ETL/ELT pipelines and gateway/security architecture — the foundation reporting is only as good as.</p>
+        <div class="chips"><span class="chip">Fabric &amp; Synapse</span><span class="chip">Dimensional modelling</span><span class="chip">Pipelines</span></div>
+      </article>
+      <article class="card reveal">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="2.5"/></svg></div>
+        <h3>Data strategy &amp; advisory</h3>
+        <p>Current-state assessment, target architecture, governance operating model and a roadmap that ties every capability to a measurable business outcome.</p>
+        <div class="chips"><span class="chip">Assessments</span><span class="chip">Roadmaps</span><span class="chip">Governance</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENGAGEMENTS ============ -->
+<section class="engage" id="engagements" aria-labelledby="engage-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Engagements</p>
+      <h2 id="engage-title">Clearly scoped ways to start</h2>
+      <p>Most work begins as one of these, then grows. Each is defined by the problem it solves, who it's for, and what you walk away with.</p>
+    </div>
+    <div class="grid cols-3">
+      <article class="card reveal">
+        <p class="tagline">Rescue</p>
+        <h3>BI performance &amp; model rescue</h3>
+        <dl class="kv">
+          <dt>Problem</dt><dd>Slow, distrusted reports and a model fighting best practice.</dd>
+          <dt>For</dt><dd>Teams whose Power BI / Tableau estate has outgrown its foundations.</dd>
+          <dt>Deliverable</dt><dd>Re-modelled, documented semantic layer + measurable performance gains.</dd>
+        </dl>
+        <div class="chips"><span class="chip">DAX tuning</span><span class="chip">Star schema</span><span class="chip">ALM</span></div>
+      </article>
+      <article class="card reveal">
+        <p class="tagline">Migrate</p>
+        <h3>Platform &amp; report migration</h3>
+        <dl class="kv">
+          <dt>Problem</dt><dd>Legacy or multi-tool reporting you need to move without losing trust.</dd>
+          <dt>For</dt><dd>Orgs consolidating onto Power BI / Fabric from Tableau, GoodData, OBIEE and more.</dd>
+          <dt>Deliverable</dt><dd>Migrated, tuned reports with parity, plus a repeatable migration playbook.</dd>
+        </dl>
+        <div class="chips"><span class="chip">Tableau→PBI</span><span class="chip">SQL→DAX</span><span class="chip">Parity QA</span></div>
+      </article>
+      <article class="card reveal">
+        <p class="tagline">Govern</p>
+        <h3>Governance, security &amp; AI-readiness</h3>
+        <dl class="kv">
+          <dt>Problem</dt><dd>Sensitive data, sprawl and compliance risk — and data that isn't yet safe for Copilot or AI agents.</dd>
+          <dt>For</dt><dd>Regulated enterprises in banking, insurance and healthcare.</dd>
+          <dt>Deliverable</dt><dd>Security &amp; classification model, governance operating model, and a Copilot / AI-readiness assessment.</dd>
+        </dl>
+        <div class="chips"><span class="chip">RLS</span><span class="chip">Data classification</span><span class="chip">Copilot-ready</span></div>
+      </article>
+      <article class="card reveal">
+        <p class="tagline">Architect</p>
+        <h3>Decision platform architecture</h3>
+        <dl class="kv">
+          <dt>Problem</dt><dd>No trusted presentation layer between raw data and the decisions it should drive.</dd>
+          <dt>For</dt><dd>Teams standing up a new analytics platform or data product.</dd>
+          <dt>Deliverable</dt><dd>Target architecture, dimensional model and a phased delivery roadmap.</dd>
+        </dl>
+        <div class="chips"><span class="chip">Lakehouse</span><span class="chip">Dimensional model</span><span class="chip">Roadmap</span></div>
+      </article>
+      <article class="card reveal">
+        <p class="tagline">Advise</p>
+        <h3>Data strategy &amp; assessment</h3>
+        <dl class="kv">
+          <dt>Problem</dt><dd>Investment without a clear line from capability to business value.</dd>
+          <dt>For</dt><dd>Leaders who need an independent read on where to go next.</dd>
+          <dt>Deliverable</dt><dd>Current-state assessment, target state and a prioritised roadmap.</dd>
+        </dl>
+        <div class="chips"><span class="chip">Assessment</span><span class="chip">Operating model</span><span class="chip">Roadmap</span></div>
+      </article>
+      <article class="card reveal">
+        <p class="tagline">Support</p>
+        <h3>Presales &amp; solution architecture</h3>
+        <dl class="kv">
+          <dt>Problem</dt><dd>A high-stakes RFP or bid that needs credible data &amp; BI solutioning.</dd>
+          <dt>For</dt><dd>Vendors and delivery teams responding to complex analytics RFPs.</dd>
+          <dt>Deliverable</dt><dd>Solution architecture, estimation and bid-defence-ready collateral.</dd>
+        </dl>
+        <div class="chips"><span class="chip">RFP response</span><span class="chip">Estimation</span><span class="chip">Bid defence</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY ============ -->
+<section class="why" id="why" aria-labelledby="why-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Why work with me</p>
+      <h2 id="why-title">Independent judgement, earned over <span class="yoe">19+</span> years</h2>
+      <p>I operate at the intersection of architecture, strategy and business impact — translating complex data ecosystems into actionable, governed decision platforms.</p>
+    </div>
+    <div class="why-list">
+      <div class="why-item reveal"><span class="num">01</span><div><h3>Genuinely independent</h3><p>No product to push and no bench to fill. My recommendation is whatever actually serves the decision — tool-agnostic across Microsoft, Tableau, GCP and AWS.</p></div></div>
+      <div class="why-item reveal"><span class="num">02</span><div><h3>Business + technical depth</h3><p>An MBA in Business Analytics and a hands-on architect's toolkit. I speak to the C-suite and to the semantic model in the same conversation.</p></div></div>
+      <div class="why-item reveal"><span class="num">03</span><div><h3>Governance-first</h3><p>Security, classification and RLS are designed in, not bolted on — so analytics stays trustworthy and AI-ready in the most regulated environments.</p></div></div>
+      <div class="why-item reveal"><span class="num">04</span><div><h3>Battle-hardened BI</h3><p>From OBIEE regulatory reporting for global banks to modern Fabric decision platforms — I've seen where reporting breaks and how to keep it standing.</p></div></div>
+      <div class="why-item reveal"><span class="num">05</span><div><h3>Outcome-focused</h3><p>Constraints-aware on cost, time and skills. Success is a faster, more confident decision — not a prettier dashboard.</p></div></div>
+      <div class="why-item reveal"><span class="num">06</span><div><h3>Builds capability that stays</h3><p>I mentor teams and leave behind standards, documentation and reusable patterns so the improvement outlasts the engagement.</p></div></div>
+      <div class="why-item reveal feature"><span class="num">07</span><div><h3>Early to agentic BI development</h3><p>An early adopter of agentic BI development — I build Power BI and Fabric as code (PBIP/PBIR, TMDL) with AI agents in GitHub&nbsp;Copilot, working both the open-source path (Kurt&nbsp;Buhler's Data&nbsp;Goblin agent skills) and Microsoft's first-party Copilot agent skills. Reports and models are generated, reviewed and version-controlled — not hand-clicked. Not just governing data near AI; using AI agents to ship better BI, faster.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SELECTED WORK ============ -->
+<section id="work" aria-labelledby="work-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Selected work</p>
+      <h2 id="work-title">Challenge, approach, outcome</h2>
+      <p>A representative sample across regulated finance, healthcare, CPG and reinsurance. Client detail kept deliberately light.</p>
+    </div>
+    <div class="grid cols-3">
+
+      <article class="case reveal">
+        <div class="case-top">
+          <span class="sector">Consumer goods · supply chain</span>
+          <h3>Supply-chain command centre</h3>
+          <div class="block"><span class="l">Challenge</span><p>Dashboards on operational data with logical inconsistencies, ~2-minute renders and competing report versions — with little client-side data engineering.</p></div>
+          <div class="block"><span class="l">Approach</span><p>Rebuilt the model to data-modelling and DAX best practice, authored an ALM lifecycle document, exposed data-quality issues, and controlled versions in SharePoint.</p></div>
+        </div>
+        <div class="result">
+          <span class="l">Outcome</span>
+          <p>~2 minutes → ~2 seconds. A reusable, standardised model and one active version — smoother QA and promotion.</p>
+          <div class="toolrow"><span>Power BI</span><span>Snowflake</span><span>DAX</span><span>Power Apps</span></div>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div class="case-top">
+          <span class="sector">Banking · regulated</span>
+          <h3>Data classification uplift</h3>
+          <div class="block"><span class="l">Challenge</span><p>A global bank needed Power BI to meet stringent regulatory classification rules before wider rollout — a non-standard problem with no off-the-shelf answer.</p></div>
+          <div class="block"><span class="l">Approach</span><p>As the sole Power BI specialist, designed a scalable way to extract data for external scanning of customer-identifiable data, working directly with the product group on preview DAX functions.</p></div>
+        </div>
+        <div class="result">
+          <span class="l">Outcome</span>
+          <p>Delivered the checkpoint required for regulatory (RAC) approval of the classification uplift.</p>
+          <div class="toolrow"><span>Power BI</span><span>INFO DAX</span><span>Governance</span></div>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div class="case-top">
+          <span class="sector">Healthcare</span>
+          <h3>Patient &amp; portal analytics</h3>
+          <div class="block"><span class="l">Challenge</span><p>Usage-tracking dashboards across healthcare portals — but the presentation layer, wireframes and mappings didn't yet exist, and blockers stalled the data.</p></div>
+          <div class="block"><span class="l">Approach</span><p>Joined mid-engagement, designed the presentation-layer model, built wireframes with the client, implemented dashboards on raw data, and fixed a VNet gateway issue.</p></div>
+        </div>
+        <div class="result">
+          <span class="l">Outcome</span>
+          <p>Evolved the requirements, unblocked delivery, and left a data layer defined to modelling best practice.</p>
+          <div class="toolrow"><span>Power BI</span><span>Azure Data Lake</span><span>Gateway</span></div>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div class="case-top">
+          <span class="sector">Retail</span>
+          <h3>Modern enterprise warehouse</h3>
+          <div class="block"><span class="l">Challenge</span><p>A supermarket chain needed actionable, self-service insight from operational data on handheld and web — buried under 200+ overlapping reports.</p></div>
+          <div class="block"><span class="l">Approach</span><p>Designed an interactive self-service BI solution on Azure, with critical KPIs and business reports built for quick decisions in the aisle and the office.</p></div>
+        </div>
+        <div class="result">
+          <span class="l">Outcome</span>
+          <p>Consolidated 200+ reports into 50 dynamic reports — faster decisions, less noise.</p>
+          <div class="toolrow"><span>Azure ADLS</span><span>ADF</span><span>Synapse</span><span>Power BI</span></div>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div class="case-top">
+          <span class="sector">Reinsurance</span>
+          <h3>Cloud analytics sandbox</h3>
+          <div class="block"><span class="l">Challenge</span><p>A reinsurer's data-science team needed a governed cloud analytical sandbox and a centralised, well-modelled data repository.</p></div>
+          <div class="block"><span class="l">Approach</span><p>Recommended a best-practice Azure architecture, designed the dimensional model, and supported data ingress/egress with the cloud integration team.</p></div>
+        </div>
+        <div class="result">
+          <span class="l">Outcome</span>
+          <p>An end-to-end BI workload and sandbox the AI/ML team could build on.</p>
+          <div class="toolrow"><span>Azure Synapse</span><span>Azure ML</span><span>ADF</span><span>Power BI</span></div>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div class="case-top">
+          <span class="sector">SaaS · multi-tenant</span>
+          <h3>GoodData → Power BI migration</h3>
+          <div class="block"><span class="l">Challenge</span><p>A SaaS provider needed multi-customer BI content moved off GoodData to Power BI — fast, without losing best practice on either platform.</p></div>
+          <div class="block"><span class="l">Approach</span><p>Learned the source platform, translated GoodData SQL to optimised DAX, and aligned multiple developers and approvers to keep delivery moving.</p></div>
+        </div>
+        <div class="result">
+          <span class="l">Outcome</span>
+          <p>Multiple customers migrated with quick turnaround while holding QA standards.</p>
+          <div class="toolrow"><span>Power BI</span><span>DAX</span><span>GoodData</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ APPROACH ============ -->
+<section class="approach" id="approach" aria-labelledby="approach-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">How I work</p>
+      <h2 id="approach-title">A method that stays constraints-aware</h2>
+      <p>The same five moves whether it's a two-week rescue or a multi-quarter platform. Governance-first, outcome always.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n">STEP 01</div><h3>Explore</h3><p>Understand the problem, the context and the decisions that actually depend on the data.</p></div>
+      <div class="step reveal"><div class="n">STEP 02</div><h3>Decompose</h3><p>Break the ambiguity down into the key data, business needs and real constraints.</p></div>
+      <div class="step reveal"><div class="n">STEP 03</div><h3>Architect</h3><p>Design a scalable, governed and cost-aware solution — modelled to best practice.</p></div>
+      <div class="step reveal"><div class="n">STEP 04</div><h3>Validate</h3><p>Prototype, pressure-test and refine with stakeholders before scaling anything.</p></div>
+      <div class="step reveal"><div class="n">STEP 05</div><h3>Deliver</h3><p>Implement, enable adoption and hand over standards so the value keeps compounding.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE & REACH ============ -->
+<section class="reach" id="experience" aria-labelledby="exp-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Experience &amp; reach</p>
+      <h2 id="exp-title">Where I've done this</h2>
+      <p>Nearly two decades across enterprise BI — from modern Azure &amp; Fabric decision platforms back to battle-tested OBIEE regulatory reporting.</p>
+    </div>
+    <div class="reach-grid">
+      <div>
+        <ul class="timeline reveal">
+          <li>
+            <div class="when">2026 — present</div>
+            <div class="role">Associate Distinguished Engineer</div>
+            <div class="org">Nagarro · Data &amp; AI Practice</div>
+            <p>Architect enterprise decision-intelligence platforms; drive presales &amp; RFP solutioning; define BI strategy, governance and modelling standards; mentor and build capability.</p>
+          </li>
+          <li>
+            <div class="when">2021 — 2026</div>
+            <div class="role">Sr Technical Program Manager · Sr BI Architect</div>
+            <div class="org">Microsoft · Copilot Mobile Growth &amp; Data / AI CoE</div>
+            <p>Owned mobile upsell delivery for Copilot with experimentation &amp; measurement frameworks; led Power BI architecture and governance across regulated finance, CPG and healthcare clients.</p>
+          </li>
+          <li>
+            <div class="when">2020 — 2021</div>
+            <div class="role">Senior Principal Consultant · Senior BI Architect</div>
+            <div class="org">Genpact · Digital Sales &amp; Solutions</div>
+            <p>Assessed data landscapes and built scalable pipelines and models for clients across diverse domains and geographies, alongside presales and RFP work.</p>
+          </li>
+          <li>
+            <div class="when">2017 — 2020</div>
+            <div class="role">Practice Lead · Senior BI Architect</div>
+            <div class="org">Nagarro · Data Engineering &amp; Visualisation</div>
+            <p>Led a 20-person BI practice; set BI standards, security and architecture; delivered modern warehouse and self-service BI across retail, gaming, manufacturing and aviation.</p>
+          </li>
+          <li>
+            <div class="when">2014 — 2017</div>
+            <div class="role">BI Tech Lead · OBIEE (Techno-Functional)</div>
+            <div class="org">RBS, a global wealth &amp; retail bank (UK)</div>
+            <p>Led liquidity-management and European regulatory reporting on OBIEE across a complex legacy landscape — the deep-end grounding behind today's governance-first instincts.</p>
+          </li>
+          <li>
+            <div class="when">2006 — 2014</div>
+            <div class="role">OBIEE Tech Lead / Developer</div>
+            <div class="org">Oracle HSGBU · Fujitsu · Birlasoft</div>
+            <p>A decade of enterprise OBIEE, Siebel Analytics and Informatica across life sciences, aviation and energy — where the reporting fundamentals were forged.</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div class="panel reveal">
+          <h3>Platforms &amp; tools</h3>
+          <div class="pill-row">
+            <span class="pill accent">Microsoft Fabric</span>
+            <span class="pill accent">Power BI</span>
+            <span class="pill accent">Tableau</span>
+            <span class="pill">Azure Synapse</span>
+            <span class="pill">Databricks</span>
+            <span class="pill">ADF</span>
+            <span class="pill">ADLS</span>
+            <span class="pill">Azure SQL</span>
+            <span class="pill">Snowflake</span>
+            <span class="pill">GCP · BigQuery</span>
+            <span class="pill">AWS · Athena</span>
+            <span class="pill">Alteryx</span>
+            <span class="pill">Informatica</span>
+            <span class="pill">SSIS</span>
+            <span class="pill">Celonis</span>
+            <span class="pill">OBIEE</span>
+          </div>
+        </div>
+        <div class="panel reveal">
+          <h3>Industries</h3>
+          <div class="pill-row">
+            <span class="pill">Banking &amp; financial services</span>
+            <span class="pill">Insurance &amp; reinsurance</span>
+            <span class="pill">Healthcare &amp; life sciences</span>
+            <span class="pill">Energy</span>
+            <span class="pill">Aviation</span>
+            <span class="pill">Retail &amp; CPG</span>
+            <span class="pill">Manufacturing</span>
+            <span class="pill">Gaming</span>
+          </div>
+        </div>
+        <div class="panel reveal">
+          <h3>Regions</h3>
+          <div class="pill-row">
+            <span class="pill">North America</span>
+            <span class="pill">UK &amp; Europe</span>
+            <span class="pill">Nordics</span>
+            <span class="pill">Switzerland</span>
+            <span class="pill">Middle East</span>
+            <span class="pill">LATAM</span>
+            <span class="pill">India / APAC</span>
+          </div>
+        </div>
+        <div class="panel reveal">
+          <h3>Credentials <span class="hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>Tap to verify</span></h3>
+          <div class="pill-row">
+            <span class="pill">MBA · Business Analytics (NMIMS)</span>
+            <span class="pill">EPGP · Data Science &amp; AI (IIIT-B)</span>
+            <a class="pill" href="https://learn.microsoft.com/en-us/users/sachinbhatnagar-5757/credentials/cf2268dee68f7743" target="_blank" rel="noopener" aria-label="Microsoft Fabric Analytics Engineer — verify credential (opens in new tab)">Microsoft Fabric Analytics Engineer<svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            <a class="pill" href="https://www.credly.com/badges/76d3d88d-160e-4d5c-b2a0-9b5ad4979f8b" target="_blank" rel="noopener" aria-label="Power BI Data Analyst Associate — verify credential (opens in new tab)">Power BI Data Analyst Associate<svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            <a class="pill" href="https://www.credly.com/badges/ad14a4e3-b473-4502-9c46-71fc6e5787de" target="_blank" rel="noopener" aria-label="Azure Data Engineer — verify credential (opens in new tab)">Azure Data Engineer<svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            <a class="pill" href="https://www.credly.com/badges/9c941966-b47d-4cf8-bfb8-4a4475a8acff" target="_blank" rel="noopener" aria-label="GCP Professional Data Engineer — verify credential (opens in new tab)">GCP Professional Data Engineer<svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            <a class="pill" href="https://www.credly.com/badges/76470e49-6cb5-4256-9e15-07edcc75b57b" target="_blank" rel="noopener" aria-label="Tableau Desktop Specialist — verify credential (opens in new tab)">Tableau Desktop Specialist<svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            <a class="pill" href="https://www.credly.com/badges/b89c87fb-ec81-480d-b776-7a5d5f620656" target="_blank" rel="noopener" aria-label="Alteryx Designer Core — verify credential (opens in new tab)">Alteryx Designer Core<svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AT A GLANCE VISUAL ============ -->
+<section class="glance" aria-labelledby="glance-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">At a glance</p>
+      <h2 id="glance-title">The whole picture, on one page</h2>
+      <p>How I think about data, decisions and the people who rely on them — the short version.</p>
+    </div>
+    <div class="glance-wrap">
+      <figure class="reveal">
+        <img src="glance.jpg" width="1536" height="1024" alt="One-page overview of Sachin Bhatnagar's work: what I do, how I work, who I work with, and the impact I create across data architecture, BI and governance." loading="lazy" />
+        <figcaption>Design scalable data platforms and decision-intelligence solutions that drive business impact.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOK A CALL ============ -->
+<section class="book" id="book" aria-labelledby="book-title">
+  <div class="wrap book-grid">
+    <div>
+      <p class="eyebrow">Book a call</p>
+      <h2 id="book-title" style="font-size:clamp(1.9rem,4vw,2.7rem)">Let's talk about your decisions</h2>
+      <p class="lead" style="color:var(--muted-d)">A no-pressure discovery call to understand your data, your constraints and where an independent perspective would help most.</p>
+      <ul class="ticks">
+        <li>30 minutes, straight to the point</li>
+        <li>A clear read on your biggest BI or data risk</li>
+        <li>At least one thing you can action either way</li>
+      </ul>
+      <div class="hero-actions">
+        <a class="btn btn-primary" id="openBooking" href="#" target="_blank" rel="noopener">Open booking page
+          <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" id="emailMe" href="#">Email instead</a>
+      </div>
+    </div>
+    <div>
+      <div class="cal-frame">
+        <iframe id="calFrame" title="Book a discovery call with Sachin Bhatnagar" loading="lazy" src="about:blank"></iframe>
+        <noscript><div class="cal-fallback">Enable JavaScript, or use the “Open booking page” button to schedule a call.</div></noscript>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site" aria-labelledby="footer-title">
+  <div class="wrap foot-grid">
+    <div>
+      <h4 id="footer-title">Sachin Bhatnagar</h4>
+      <p style="max-width:34ch">Independent Decision Intelligence Advisor — helping organisations unlock the power of data to drive growth, efficiency and better outcomes.</p>
+      <a class="btn btn-primary" href="#book" style="margin-top:.4rem">Book a discovery call</a>
+    </div>
+    <div>
+      <p class="foot-label">Contact</p>
+      <ul class="foot-links">
+        <li><a id="footEmail" href="#">i.sachin.bhatnagar@outlook.com</a></li>
+        <li><a href="https://www.linkedin.com/in/sachinbhatnagarbiwiz/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        <li><a id="footBooking" href="#" target="_blank" rel="noopener">Book a call ↗</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="foot-label">Explore</p>
+      <ul class="foot-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#engagements">Engagements</a></li>
+        <li><a href="#work">Selected work</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© <span id="year">2026</span> Sachin Bhatnagar. All rights reserved.</span>
+    <span>Independent · Tool-Agnostic · Governance-First</span>
+  </div>
+</footer>
+
+<script>
+  /* =====================================================================
+     EDIT ME — key links live here. Change once, updates everywhere.
+     ===================================================================== */
+  const CAL_LINK = "https://www.cal.eu/i.sachin.bhatnagar"; // your cal.eu (EU-hosted) scheduling page
+  const EMAIL    = "i.sachin.bhatnagar@outlook.com";
+  const LINKEDIN = "https://www.linkedin.com/in/sachinbhatnagarbiwiz/";
+  /* ===================================================================== */
+
+  // Wire the cal.com booking links + embed from the single constant above.
+  (function () {
+    const mailto = "mailto:" + EMAIL + "?subject=Discovery%20call%20—%20Decision%20Intelligence";
+    document.getElementById("openBooking").href = CAL_LINK;
+    document.getElementById("footBooking").href = CAL_LINK;
+    document.getElementById("emailMe").href = mailto;
+    document.getElementById("footEmail").href = mailto;
+
+    // Lazy-load the cal.com embed only when it scrolls near view, so the page
+    // stays fast and works even if the embed is blocked.
+    const frame = document.getElementById("calFrame");
+    const load = () => { if (frame && frame.src === "about:blank") frame.src = CAL_LINK; };
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { load(); io.disconnect(); } });
+      }, { rootMargin: "400px" });
+      io.observe(document.getElementById("book"));
+    } else { load(); }
+
+    // Current year in footer.
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Years of experience — auto-increments from the career start date below.
+    // Counts full years elapsed since Sep 2006, so it ticks up on each work anniversary.
+    const CAREER_START = { year: 2006, month: 9 }; // September 2006
+    const now2 = new Date();
+    let yoe = now2.getFullYear() - CAREER_START.year;
+    if (now2.getMonth() + 1 < CAREER_START.month) yoe--; // anniversary month not yet reached this year
+    document.querySelectorAll(".yoe").forEach((el) => { el.textContent = yoe + "+"; });
+
+    // Scroll-reveal: fade/rise elements in as they enter view, with a gentle
+    // stagger across siblings in the same group. Add class="reveal" to any
+    // element to opt in. Honours reduced-motion.
+    (function () {
+      const items = document.querySelectorAll(".reveal");
+      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!items.length) return;
+      if (reduce || !("IntersectionObserver" in window)) {
+        items.forEach((el) => el.classList.add("in"));
+        return;
+      }
+      items.forEach((el) => {
+        const group = Array.prototype.filter.call(el.parentElement.children, (c) => c.classList.contains("reveal"));
+        el.style.transitionDelay = (group.indexOf(el) * 90) + "ms";
+      });
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.15, rootMargin: "0px 0px -8% 0px" });
+      items.forEach((el) => io.observe(el));
+    })();
+
+    // Mobile nav toggle.
+    const toggle = document.getElementById("navToggle");
+    const links = document.getElementById("navLinks");
+    if (toggle) {
+      toggle.addEventListener("click", () => {
+        const open = links.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+      links.addEventListener("click", (e) => {
+        if (e.target.tagName === "A") {
+          links.classList.remove("open");
+          toggle.setAttribute("aria-expanded", "false");
+        }
+      });
+    }
+  })();
+</script>
